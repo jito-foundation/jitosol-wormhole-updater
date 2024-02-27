@@ -1,5 +1,5 @@
 #!/bin/zsh
-npx tsup jitosol-updater/src/index.ts  -d .
+npm run build
 gcloud config set project mev-data-341506
 gcloud functions deploy jitosol-wormhole-update \
   --region us-central1 \
