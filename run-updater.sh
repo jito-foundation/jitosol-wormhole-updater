@@ -15,7 +15,7 @@ function clean_up () {
 }
 trap clean_up SIGINT SIGTERM EXIT
 
-echo "🍴 Forking mainnet for Ethereum ..."
+echo "🍴 Forking mainnet ..."
 # anvil --fork-url https://ethereum.publicnode.com > /dev/null &
 anvil --fork-url https://arbitrum-one.publicnode.com > /dev/null &
 ANVIL_PID=$!
@@ -29,7 +29,9 @@ sleep 10
 npx @wormhole-foundation/wormhole-cli@0.0.2 evm hijack -a 0xa5f208e072434bC67592E4C49C1B991BA79BCA46 -g 0xbeFA429d57cD18b7F8A4d91A2da9AB4AF05d0FBe # Arbitrum
 
 
-# Run integration tests
+# Run function locally
+# Test with `curl localhost:8080`
 ETH_NETWORK="http://localhost:8545" \
     SOLANA_RPC="https://api.mainnet-beta.solana.com" \
-    npx tsx@4.7.0 ./jitosol-updater/src/index.ts
+    API_KEY="" \
+    npm run start
