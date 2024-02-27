@@ -1,0 +1,13 @@
+#!include:.gitignore
+# Do not ignore built (or dist) folder for gcloud:
+!/built
+!/ts-built
+!/types
+
+out/
+node_modules/
+lib/
+cache/
+ts-test/
+types/
+jitosol-updater/
