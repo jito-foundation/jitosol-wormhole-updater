@@ -46,9 +46,9 @@ import { logQueryResponseInfo } from "./utils";
       )
     ),
   ]);
+
   const resp = await mock.mock(query);
-  const { slotNumber, blockTime, totalActiveStake, poolTokenSupply } =
-    logQueryResponseInfo(resp.bytes);
+  const { slotNumber, blockTime, totalActiveStake, poolTokenSupply } = logQueryResponseInfo(resp.bytes);
 
   console.log(
     `\nDeploying StakePoolRate ${WORMHOLE_ADDRESS} ${JITO_ADDRESS_HEX} ${THIRTY_MINUTES} ${THIRTY_DAYS}\n`
