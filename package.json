@@ -18,7 +18,7 @@
   },
   "scripts": {
     "build": "npx tsup jitosol-updater/src/index.ts -d .",
-    "start": "npm run build; functions-framework --target=updater",
+    "start": "functions-framework --target=updater",
     "gcp-build": "npm install"
   }
 }

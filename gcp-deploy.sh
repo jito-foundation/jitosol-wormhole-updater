@@ -1,5 +1,6 @@
 #!/bin/zsh
 npm run build
+mv index.js function.js
 gcloud config set project mev-data-341506
 gcloud functions deploy jitosol-wormhole-update \
   --region us-central1 \

@@ -24,6 +24,7 @@ docs/
 # production
 /build
 index.js
+function.js
 
 # misc
 .DS_Store
