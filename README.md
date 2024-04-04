@@ -1,6 +1,8 @@
-## Queries Stake Pool Rate PoC
+## Queries Stake Pool Rate Provider
 
-This is a demo of using [Wormhole Queries](https://wormhole.com/queries/) to provide a [Solana Stake Pool](https://spl.solana.com/stake-pool) rate on an EVM chain.
+The StakePoolRate contract for JitoSOL is deployed on Arbitrum at https://arbiscan.io/address/0x8255352322c301c076cB2E2a1C63772ffa0ba829 and updating regularly.
+
+This uses [Wormhole Queries](https://wormhole.com/queries/) to provide a [Solana Stake Pool](https://spl.solana.com/stake-pool) rate on an EVM chain.
 
 The tests use [Jito SOL](https://www.jito.network/) as an example, though the code is generally applicable to any Stake Pool account.
 
