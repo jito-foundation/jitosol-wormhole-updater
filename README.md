@@ -1,6 +1,6 @@
 ## Queries Stake Pool Rate Provider
 
-The StakePoolRate contract for JitoSOL is deployed on Arbitrum at https://arbiscan.io/address/0x8255352322c301c076cB2E2a1C63772ffa0ba829 and updating regularly.
+The StakePoolRate contract for JitoSOL is deployed on Arbitrum at https://arbiscan.io/address/0x8aa73ec870dc4a0af6b471937682a8fc3b8a21f8 and updating regularly.
 
 This uses [Wormhole Queries](https://wormhole.com/queries/) to provide a [Solana Stake Pool](https://spl.solana.com/stake-pool) rate on an EVM chain.
 
